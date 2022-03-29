@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 14px;
+      }
+      body {
+        /* font-size: 16px; 기본값*/
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+        width: 70%;
+      }
+      span {
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css 기본문법</h1>
+    <!-- rem : root element 의 크기를 기준으로 설정
+         body : 16px => css상속(자손(자식+자식의 자식)) => body 크기를 지정하지 않으면 기본값은 16px 임
+
+         h1 : 1.5 em => 14px * 1.5em
+         h2 : 1.2 em => 14px * 1.2em
+         p  : 1em => 14 * 1em
+         span : 1em => 14 * 1em * 0.8em
+    -->
+    <h2>단위 : rem</h2>
+    <p>
+      <span>Lorem ipsum </span> dolor sit amet consectetur adipisicing elit. Quo
+      officia sed tenetur amet. Laboriosam voluptatem cupiditate fugiat ipsam
+      aut molestiae, quisquam excepturi accusamus reiciendis eos explicabo
+      maiores, adipisci dolorem suscipit.
+    </p>
+  </body>
+</html>
