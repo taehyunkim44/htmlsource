@@ -7,15 +7,15 @@
     <title>Document</title>
     <style>
       div {
-        width: 100px; /* auto: 100% */
-        height: auto; /* auto: 0*/
+        width: 100px; /* auto : 100% */
+        height: 50px; /* auto : 0 */
         background-color: blueviolet;
 
         display: inline;
       }
       span {
-        width: auto;
-        height: auto;
+        width: 100px; /* auto : 컨텐츠 너비 */
+        height: 50px; /* auto : 컨텐츠 높이 */
         background-color: orange;
 
         display: block;
@@ -25,8 +25,12 @@
   <body>
     <!--
           block level element 특징
-          width : 100%
-          height : 0에서 시작
+          - width : 100%
+          - height : 0에서 시작
+
+          inline level element 특징
+          - width,height : 값을 가질 수 없음
+           
       -->
     <div>내용</div>
     <span>요소</span>

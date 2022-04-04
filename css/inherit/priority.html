@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+      #text {
+        color: green !important;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="mystyle.css"> -->
+  </head>
+  <body>
+    <!--
+        스타일 우선순위
+
+        1. 명시도 점수가 높은 선언이 우선한다.
+           (!important(1000점) > 인라인(500점) > 아이디(100점) > 클래스(10점) > 태그(1점) > 전체 > 상속)
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선한다.
+        3. 명시도는 상속 규칙보다 우선한다.
+        4. !important 가 적용된 선언 방식이 다른 모든 방식보다 우선한다.
+
+
+        .list li.item{ color: red; }
+
+        .list li:hover{}
+        .box::before{}
+
+        #submit span{}
+        :not(.box){}
+        :not(h1){}
+
+
+    -->
+    <!-- 인라인 방식
+        <h1 style="color:blue">헤딩태그</h1>-->
+    <div class="area">
+      <p id="text" style="color: orange">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+        doloremque quas dolore quaerat provident recusandae deleniti consectetur
+        eos excepturi consequatur distinctio voluptatem animi quo delectus,
+        illum voluptas laboriosam. Rerum alias vero cumque aliquam assumenda
+        quam, placeat exercitationem voluptatem aut voluptates. Praesentium odit
+        vitae, minima tenetur aperiam fuga ad quo repellat officia aspernatur
+        nisi hic soluta deserunt, quis dolor labore inventore et alias ipsam
+        voluptate corrupti id accusantium debitis eum! Ab accusamus eos nemo
+        minima a, accusantium voluptatibus sint. Debitis pariatur minus
+        voluptate cum dolores praesentium modi sit aliquam ipsum aperiam?
+        Consequatur adipisci, porro deserunt eaque incidunt dolores. Autem, amet
+        unde.
+      </p>
+    </div>
+  </body>
+</html>

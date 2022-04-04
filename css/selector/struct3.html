@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1::before{
-            content: "Before ";
+        /* 첫번째 요소의 글자 색상은 빨간색 */
+        .fruits li:first-child{
             color: red;
         }
-        h1::after{
-            content: " After";
-            color: blue;
+
+        /* 마지막 요소의 글자 색상은 violet */
+        .fruits li:last-child{
+            color: violet;
         }
-        h3::before{
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-color: red;
-            display: inline-block;
-            margin-right: 10px;
+
+        /* 3번째 요소부터 그 이후의 요소들의 글자 색상은 blue */
+        .fruits li:nth-child(n + 3){
+            color: blue;
         }
 
     </style>
@@ -37,10 +35,19 @@
          8.  속성 선택자 : 속성 값을 가지고 있는 태그를 지정( [속성] )
          9.  가상 클래스 선택자 : :link, :visited, :active, :hover, :focus 가상 클래스 지정
          10. 가상 요소 선택자 :   ::before,  ::after
+         11. 구조 선택자 :  요소:first-child, 요소:last-child,  요소:nth-child(3)
      -->
      <h1 id="title">css 기본문법</h1>
-     <h2>의사 요소 선택자</h2>
-     <h3>의사 요소 선택자의 활용</h3>
+     <h2>구조 선택자</h2>
+     <ul class="fruits">
+         <li>딸기</li>
+         <li>사과</li>
+         <li>오렌지</li>
+         <li>망고</li>
+     </ul>
+
+
+
 
 </body>
 </html>
